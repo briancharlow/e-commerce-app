@@ -43,16 +43,22 @@ a {
 #products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .product-item {
     width: 200px;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc;;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+    
 }
-
+.product-item:hover{
+    transform: scale(1.04);
+}
 .product-item img {
     width: 100%;
     height: auto;
@@ -132,4 +138,10 @@ a {
 .product-card img {
     width: 100%;
     height: auto;
+}
+btn{
+    color:#ccc;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 4rem;
 }
